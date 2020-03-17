@@ -19,7 +19,7 @@ class  MyMysql
                         $this->mysql_username="root"   ;      //"root";//改成自己的mysql数据库用户名
                         $this->mysql_password="123456"  ; //  "//123456";//改成自己的mysql数据库密码
                         $this->mysql_database=$database;    //"test";//改成自己的mysql数据【库】名
-                        $this->mysql_table=$table; //  "weibo";//改成自己的mysql数据【表】名
+                        $this->mysql_table=$table; //  "weibo";//改成自己的mysql数据【表】名8
                     $this->mysqli = new mysqli($this->mysql_server_name, $this->mysql_username, $this->mysql_password); 
                     if(mysqli_connect_errno()){
                             echo "数据库连接失败";
@@ -110,7 +110,7 @@ class  MyMysql
                         // 测试可以看出当传入的是字符串时,替换变量后,引号消失需要引变量
                         $sql_select = "select * from  $this->mysql_table  where  type='$type'";
                         // $sql_select = "select * from  $this->mysql_table ";
-                           
+                                 //
                                 if ($result = $this->mysqli->query($sql_select)) {
                                     // printf("Select returned %d rows.\n", $result->num_rows);
                                     $arr=[];
